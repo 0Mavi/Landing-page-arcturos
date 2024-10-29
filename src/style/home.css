@@ -1,0 +1,115 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+#cta .title span {
+    color: #c711e0; 
+}
+
+#cta .description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    
+}
+
+#cta_button {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#phone_button { 
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    border-radius: 12px;
+}
+
+#phone_button i{
+    color: #ffffff;
+}
+
+#phone_button p {
+    color: black;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner img {
+    height: 100%;
+    width: fit-content;
+    
+}
+
+.shape {
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXl6bnRwODVqeW9pM3cya24wYTc2OTRhMzJldXN2NGZqMjk3dDF3ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3zhxq2ttgN6rEw8SDx/giphy.webp');
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 25%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+  
+
+    #phone_button  button{
+        display: none;
+    }
+}
